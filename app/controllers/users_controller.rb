@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   # def show
   # end
-  def show
+  def show # all users (by instance variable) using ActiveRecord Library access db
     @user = User.find(params[:id]) # id:1 ~= User.find(1) 
   end
 
